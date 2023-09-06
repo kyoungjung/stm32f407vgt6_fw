@@ -6,3 +6,21 @@
  */
 
 
+#include "main.h"
+
+
+
+
+int main(void)
+{
+  int ret = 0;
+
+
+  hwInit();
+  apInit();
+
+  apMain();
+
+
+  return ret;
+}
