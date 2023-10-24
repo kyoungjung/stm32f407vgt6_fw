@@ -1,0 +1,6 @@
+ap.c:11:6:timerISR_1	1
+ap.c:16:6:timerISR_2	1
+ap.c:21:6:timerISR_3	1
+ap.c:26:6:timerISR_4	1
+ap.c:31:6:apInit	1
+ap.c:51:6:apMain	2
