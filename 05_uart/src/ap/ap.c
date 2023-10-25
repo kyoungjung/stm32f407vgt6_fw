@@ -8,7 +8,6 @@
 
 #include "ap.h"
 
-
 void ledISR(void *arg)
 {
   ledToggle(_DEF_LED3);     //led3 토글한다
@@ -29,8 +28,6 @@ void apInit(void)
 
   uartOpen(_DEF_UART1, 115200);
 
-  uartPutch(_DEF_UART1, 'A');
-
   uartPrintf(_DEF_UART1, "UART 1 OPEN \r\n");
 }
 
@@ -45,6 +42,13 @@ void apMain(void)
     {
       pre_time = millis();
       //ledToggle(_DEF_LED1);
+      //uartPrintf(_DEF_UART1, uartRead(_DEF_UART1));
     }
+
+    if(uartAvailable(_DEF_UART1) > 0)
+    {
+      uartPrintf(_DEF_UART1, uartRead(_DEF_UART1));
+    }
+
   }
 }

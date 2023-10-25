@@ -15,7 +15,7 @@
 #define UART_MODE_VCP                       4
 
 #define UART_RX_BUF_LENGTH                  16
-#define UART_RX_QBUF_LENGTH                 256
+#define UART_RX_QBUF_LENGTH                 255
 
 DMA_HandleTypeDef hdma_tx;
 DMA_HandleTypeDef hdma_rx;
@@ -44,7 +44,7 @@ typedef struct
 
 
 uart_t      uart_tbl[UART_MAX_CH];  //채널별 UART 핸들링위한 UART 구조체 변수 선언
-uint8_t     uart_rx_qbuf[UART_MAX_CH][UART_RX_QBUF_LENGTH];   //uart채널별 큐버퍼 선언
+uint8_t     uart_rx_qbuf[UART_RX_QBUF_LENGTH];   //uart채널별 큐버퍼 선언
 
 void uartStartRx(uint8_t ch);         //uart 수신시작 설정 함수
 void uartRxHandler(uint8_t ch);       //uart 수신 핸들러 함수
@@ -59,6 +59,8 @@ void uartInit(void)
     uart_tbl[i].rx_mode   = UART_MODE_POLLING;
     uart_tbl[i].tx_mode   = UART_MODE_POLLING;
   }
+
+  __HAL_RCC_USART1_CLK_ENABLE();
 }
 
 bool uartOpen(uint8_t ch, uint32_t baud)
@@ -66,13 +68,14 @@ bool uartOpen(uint8_t ch, uint32_t baud)
   bool ret = true;
   uart_t  *p_uart;        //uart 핸들용 구조체 포인터 변수 선언
 
-  p_uart = &uart_tbl[ch];
 
   if(ch > UART_MAX_CH)    return false;
 
   switch(ch)
   {
     case _DEF_UART1:
+
+      p_uart = &uart_tbl[ch];
 
       p_uart->baud = baud;
       p_uart->is_open = true;
@@ -89,7 +92,7 @@ bool uartOpen(uint8_t ch, uint32_t baud)
       p_uart->handle.Init.HwFlowCtl     = UART_HWCONTROL_NONE;
       p_uart->handle.Init.OverSampling  = UART_OVERSAMPLING_16;
 
-      qbufferCreate(&p_uart->qbuffer_rx, uart_rx_qbuf[ch], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
+      qbufferCreate(&p_uart->qbuffer_rx, &uart_rx_qbuf[0], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
 
       if(HAL_UART_Init(&p_uart->handle) != HAL_OK)                                          //uart 초기화
       {
@@ -127,12 +130,11 @@ void uartStartRx(uint8_t ch)
 
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
-        if(HAL_UART_Receive_DMA(&p_uart->handle, p_uart->qbuffer_rx.p_buf, UART_RX_QBUF_LENGTH) != HAL_OK)
+        if(HAL_UART_Receive_DMA(&p_uart->handle, (uint8_t*)&uart_rx_qbuf[0], 255) != HAL_OK)
         {
           return;
         }
-
-        p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.ptr_in - p_uart->hdma.Instance->NDTR;
+        p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
         p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
       }
       break;
@@ -274,10 +276,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 {
   GPIO_InitTypeDef  GPIO_InitStruct;
 
+
   /* Enable GPIO clock */
   __HAL_RCC_GPIOA_CLK_ENABLE();
-  /* Enable DMA2 clock */
-  __HAL_RCC_DMA2_CLK_ENABLE();
+
 
 
   /*##-2- Configure peripheral GPIO ##########################################*/
@@ -298,10 +300,10 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
 
   /*##-3- Configure the DMA streams ##########################################*/
   /* Configure the DMA handler for Transmission process */
-  hdma_rx.Instance                 = DMA2_Stream5;
+  hdma_rx.Instance                 = DMA2_Stream2;
 
   hdma_rx.Init.Channel             = DMA_CHANNEL_4;
-  hdma_rx.Init.Direction           = DMA_MEMORY_TO_PERIPH;
+  hdma_rx.Init.Direction           = DMA_PERIPH_TO_MEMORY;
   hdma_rx.Init.PeriphInc           = DMA_PINC_DISABLE;
   hdma_rx.Init.MemInc              = DMA_MINC_ENABLE;
   hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
@@ -309,10 +311,6 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
   hdma_rx.Init.Mode                = DMA_CIRCULAR;
   hdma_rx.Init.Priority            = DMA_PRIORITY_LOW;
   hdma_rx.Init.FIFOMode            = DMA_FIFOMODE_DISABLE;
-  hdma_rx.Init.FIFOThreshold       = DMA_FIFO_THRESHOLD_FULL;
-  hdma_rx.Init.MemBurst            = DMA_MBURST_INC4;
-  hdma_rx.Init.PeriphBurst         = DMA_PBURST_INC4;
-
   if(HAL_DMA_Init(&hdma_rx) != HAL_OK)
   {
     Error_Handler();
@@ -322,9 +320,7 @@ void HAL_UART_MspInit(UART_HandleTypeDef *huart)
   __HAL_LINKDMA(huart, hdmarx, hdma_rx);
 
   /*##-4- Configure the NVIC for DMA #########################################*/
-  /* NVIC configuration for DMA transfer complete interrupt (USARTx_RX) */
-  HAL_NVIC_SetPriority(DMA2_Stream5_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA2_Stream5_IRQn);
+
 
   /* NVIC configuration for USART TC interrupt */
   HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);

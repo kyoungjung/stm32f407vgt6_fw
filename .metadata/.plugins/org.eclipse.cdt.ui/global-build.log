@@ -990,3 +990,773 @@ arm-none-eabi-size   05_uart.elf
   18484	    216	   2564	  21264	   5310	05_uart.elf
 Finished building: default.size.stdout
  
+22:41:48 **** Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18484	    216	   2564	  21264	   5310	05_uart.elf
+Finished building: default.size.stdout
+ 
+22:45:07 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18484	    216	   2564	  21264	   5310	05_uart.elf
+Finished building: default.size.stdout
+ 
+22:47:55 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+   text	   data	    bss	    dec	    hex	filename
+  18516	    216	   2564	  21296	   5330	05_uart.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.bin
+Finished building: 05_uart.hex
+ 
+ 
+Finished building: 05_uart.list
+ 
+22:48:02 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18516	    216	   2564	  21296	   5330	05_uart.elf
+Finished building: default.size.stdout
+ 
+22:48:05 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18516	    216	   2564	  21296	   5330	05_uart.elf
+Finished building: default.size.stdout
+ 
+22:54:22 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_can.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/Legacy/stm32f4xx_hal_eth.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cec.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cryp_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dac_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dfsdm.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma2d.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dsi.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_eth.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpi2c_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_fmpsmbus_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hash_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_hcd.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2s_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_irda.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_lptim.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_ltdc_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_mmc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nand.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_nor.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pccard.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_qspi.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rng.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sai_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sd.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sdram.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smartcard.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_smbus.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spdifrx.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_sram.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_usart.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_wwdg.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fmc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_fsmc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_sdmmc.o"
+arm-none-eabi-gcc "../src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.d" -MT"src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
+arm-none-eabi-gcc "../src/hw/core/button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/button.d" -MT"src/hw/core/button.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/button.o"
+arm-none-eabi-gcc "../src/hw/core/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/led.d" -MT"src/hw/core/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/led.o"
+arm-none-eabi-gcc "../src/hw/core/swtimer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/swtimer.d" -MT"src/hw/core/swtimer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/swtimer.o"
+arm-none-eabi-gcc "../src/hw/core/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/timer.d" -MT"src/hw/core/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/timer.o"
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/bsp/bsp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/bsp.d" -MT"src/bsp/bsp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/bsp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/stm32f4xx_it.d" -MT"src/bsp/stm32f4xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f4xx_it.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/hw/core/timer.c: In function 'HAL_TIM_OC_DelayElapsedCallback':
+../src/hw/core/timer.c:227:3: warning: implicit declaration of function 'swtimerISR' [-Wimplicit-function-declaration]
+  227 |   swtimerISR();
+      |   ^~~~~~~~~~
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18516	    216	   2564	  21296	   5330	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:00:36 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c:12:18: error: invalid initializer
+   12 | uint8_t txd[1] = 'A';
+      |                  ^~~
+make: *** [src/ap/subdir.mk:19: src/ap/ap.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:00:52 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18536	    220	   2632	  21388	   538c	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:00:57 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18536	    220	   2632	  21388	   538c	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:07:37 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18532	    220	   2632	  21384	   5388	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:07:42 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18532	    220	   2632	  21384	   5388	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:12:59 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:45:30: warning: passing argument 2 of 'uartPrintf' makes pointer from integer without a cast [-Wint-conversion]
+   45 |       uartPrintf(_DEF_UART1, uartRead(_DEF_UART1));
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint8_t {aka unsigned char}
+In file included from D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw/hw.h:16,
+                 from ../src/ap/ap.h:11,
+                 from ../src/ap/ap.c:9:
+D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include/uart.h:26:44: note: expected 'const char *' but argument is of type 'uint8_t' {aka 'unsigned char'}
+   26 | int32_t uartPrintf(uint8_t ch, const char *fmt, ...);
+      |                                ~~~~~~~~~~~~^~~
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:13:05 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:18:29 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:25:12 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:30:13 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:30:17 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:30:19 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:34:44 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:34:48 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:36:30 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:36:41 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:36:43 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:41:24 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:41:34 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:41:38 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18684	    216	   2564	  21464	   53d8	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:48:59 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18688	    216	   2564	  21468	   53dc	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:49:04 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18688	    216	   2564	  21468	   53dc	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:49:06 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18688	    216	   2564	  21468	   53dc	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:51:17 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18660	    216	   2564	  21440	   53c0	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:51:27 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18660	    216	   2564	  21440	   53c0	05_uart.elf
+Finished building: default.size.stdout
+ 
+23:54:18 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:50:30: warning: passing argument 2 of 'uartPrintf' makes pointer from integer without a cast [-Wint-conversion]
+   50 |       uartPrintf(_DEF_UART1, uartRead(_DEF_UART1));
+      |                              ^~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              uint8_t {aka unsigned char}
+In file included from D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw/hw.h:16,
+                 from ../src/ap/ap.h:11,
+                 from ../src/ap/ap.c:9:
+D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include/uart.h:26:44: note: expected 'const char *' but argument is of type 'uint8_t' {aka 'unsigned char'}
+   26 | int32_t uartPrintf(uint8_t ch, const char *fmt, ...);
+      |                                ~~~~~~~~~~~~^~~
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18824	    216	   2564	  21604	   5464	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+23:54:25 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18824	    216	   2564	  21604	   5464	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:04:27 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18804	    216	   2564	  21584	   5450	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+00:04:31 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18804	    216	   2564	  21584	   5450	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:07:37 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18832	    216	   2564	  21612	   546c	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+00:07:44 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18832	    216	   2564	  21612	   546c	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:12:16 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+00:12:27 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:12:31 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:15:17 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+00:15:21 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:45:34 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+00:59:40 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+00:59:49 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:00:55 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18788	    216	   2564	  21568	   5440	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+01:01:02 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18788	    216	   2564	  21568	   5440	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:09:46 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.bin
+Finished building: 05_uart.hex
+ 
+ 
+Finished building: 05_uart.list
+ 
+01:09:51 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18776	    216	   2564	  21556	   5434	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:21:23 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18772	    216	   2564	  21552	   5430	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+01:21:40 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18772	    216	   2564	  21552	   5430	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:21:42 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18772	    216	   2564	  21552	   5430	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:22:23 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/cmsis/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/lib/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/05_uart/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "05_uart.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart\src\bsp\ldscript\STM32F407VGTx_FLASH.ld" --specs=nosys.specs -Wl,-Map="05_uart.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 05_uart.elf
+ 
+arm-none-eabi-size   05_uart.elf 
+arm-none-eabi-objdump -h -S  05_uart.elf  > "05_uart.list"
+arm-none-eabi-objcopy  -O ihex  05_uart.elf  "05_uart.hex"
+   text	   data	    bss	    dec	    hex	filename
+  18768	    216	   2564	  21548	   542c	05_uart.elf
+arm-none-eabi-objcopy  -O binary  05_uart.elf  "05_uart.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 05_uart.hex
+Finished building: 05_uart.bin
+ 
+ 
+Finished building: 05_uart.list
+ 
+01:22:29 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18768	    216	   2564	  21548	   542c	05_uart.elf
+Finished building: default.size.stdout
+ 
+01:22:31 **** Incremental Build of configuration Debug for project 05_uart ****
+make -j16 all 
+arm-none-eabi-size   05_uart.elf 
+   text	   data	    bss	    dec	    hex	filename
+  18768	    216	   2564	  21548	   542c	05_uart.elf
+Finished building: default.size.stdout
+ 

@@ -174,7 +174,7 @@ typedef struct __UART_HandleTypeDef
 
   __IO HAL_UART_StateTypeDef    gState;           /*!< UART state information related to global Handle management
                                                        and also related to Tx operations.
-                                                       This parameter can be a value of @ref HAL_UART_StateTypeDef */
+                                                       This parameter can be a value of @ref HA L_UART_StateTypeDef */
 
   __IO HAL_UART_StateTypeDef    RxState;          /*!< UART state information related to Rx operations.
                                                        This parameter can be a value of @ref HAL_UART_StateTypeDef */
