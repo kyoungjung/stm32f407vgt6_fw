@@ -12,7 +12,7 @@
 	<item key="org.eclipse.cdt.uiformatter_pagemodify_dialog.preferred_y" value="45"/>
 	<item key="LastUsedHeaderTemplate" value="Default C header template"/>
 	<item key="LastUsedSourceTemplate" value="Default C source template"/>
-	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/src/common/include}"/>
+	<item key="org.eclipse.cdt.utils.ui.controls.FileListControl" value="${workspace_loc:/${ProjName}/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include}"/>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 	<section name="completion_proposal_size">
@@ -31,6 +31,9 @@
 		<item key="caseSensitive" value="false"/>
 		<item key="searchFlags" value="227191"/>
 		<list key="previousPatterns">
+			<item value="uartStartRx"/>
+			<item value="HAL_NVIC_SetPriority"/>
+			<item value="DMA2_Stream5"/>
 			<item value="HAL_TIM_OC_MspInit"/>
 			<item value="HAL_TIM_OC_DelayElapsedCallback"/>
 		</list>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;06_uart_cubemx/src/bsp/cmsis&apos;" deleteContents="false" description="Delete resource &apos;06_uart_cubemx/src/bsp/cmsis&apos;" element1="/06_uart_cubemx/src/bsp/cmsis" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1698844138028"/>
+</session>

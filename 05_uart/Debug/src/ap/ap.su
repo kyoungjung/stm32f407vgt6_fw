@@ -1,3 +1,0 @@
-../src/ap/ap.c:11:6:ledISR	16	static
-../src/ap/ap.c:16:6:apInit	24	static
-../src/ap/ap.c:34:6:apMain	16	static

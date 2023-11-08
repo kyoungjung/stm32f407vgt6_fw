@@ -7,6 +7,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\07_uart_int_cubemx"/>
+			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\06_uart_cubemx"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\04_swtimer"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\03_timer"/>
