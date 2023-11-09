@@ -1,0 +1,15 @@
+uart.c:56:6:uartInit	2
+uart.c:70:6:uartOpen	5
+uart.c:133:6:uartStartRx	5
+uart.c:164:6:uartClose	4
+uart.c:181:10:uartAvailable	3
+uart.c:203:6:uartFlush	3
+uart.c:222:6:uartPutch	1
+uart.c:227:9:uartGetch	3
+uart.c:241:9:uartWrite	6
+uart.c:271:9:uartRead	2
+uart.c:291:9:uartPrintf	1
+uart.c:308:6:HAL_UART_RxCpltCallback	2
+uart.c:322:6:HAL_UART_MspInit	3
+uart.c:374:6:HAL_UART_MspDeInit	2
+uart.c:401:6:Error_Handler	1

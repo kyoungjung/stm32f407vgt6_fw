@@ -60,8 +60,10 @@ void uartInit(void)
   {
     uart_tbl[i].is_open   = false;
     uart_tbl[i].vcp_mode  = false;
-    uart_tbl[i].rx_mode   = UART_MODE_POLLING;
-    uart_tbl[i].tx_mode   = UART_MODE_POLLING;
+    //uart_tbl[i].rx_mode   = UART_MODE_INTERRUPT;
+    //uart_tbl[i].tx_mode   = UART_MODE_INTERRUPT;
+    uart_tbl[i].rx_mode   = UART_MODE_DMA;
+    uart_tbl[i].tx_mode   = UART_MODE_DMA;
   }
 }
 
@@ -82,8 +84,10 @@ bool uartOpen(uint8_t ch, uint32_t baud)
       p_uart->baud = baud;
       p_uart->is_open = true;
       p_uart->vcp_mode  = false;
-      p_uart->rx_mode   = UART_MODE_DMA;
-      p_uart->tx_mode   = UART_MODE_DMA;
+      //p_uart->rx_mode   = UART_MODE_DMA;
+      //p_uart->tx_mode   = UART_MODE_DMA;
+      //p_uart->rx_mode     = UART_MODE_INTERRUPT;
+      //p_uart->tx_mode     = UART_MODE_INTERRUPT;
 
       huart1.Instance           = USART1;
       huart1.Init.BaudRate      = baud;
@@ -98,13 +102,16 @@ bool uartOpen(uint8_t ch, uint32_t baud)
 
       qbufferCreate(&qbuffer[ch], &uart_rx_qbuf[0], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
 
-      /* DMA controller clock enable */
-      __HAL_RCC_DMA2_CLK_ENABLE();
+      if(p_uart->rx_mode == UART_MODE_DMA)
+      {
+        /* DMA controller clock enable */
+        __HAL_RCC_DMA2_CLK_ENABLE();
 
-      /* DMA interrupt init */
-      /* DMA2_Stream2_IRQn interrupt configuration */
-      HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
-      HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
+        /* DMA interrupt init */
+        /* DMA2_Stream2_IRQn interrupt configuration */
+        HAL_NVIC_SetPriority(DMA2_Stream2_IRQn, 0, 0);
+        HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
+      }
 
       if(HAL_UART_Init(&huart1) != HAL_OK)                                          //uart 초기화
       {
@@ -117,9 +124,6 @@ bool uartOpen(uint8_t ch, uint32_t baud)
 
       break;
   }
-
-
-
   return ret;
 }
 
@@ -137,7 +141,8 @@ void uartStartRx(uint8_t ch)
     case _DEF_UART1:
       if(p_uart->rx_mode == UART_MODE_INTERRUPT)
       {
-        HAL_UART_Receive_IT(&p_uart->handle, p_uart->rx_buf, 1);
+        //HAL_UART_Receive_IT(&p_uart->handle, p_uart->rx_buf, 1);
+        HAL_UART_Receive_IT(&huart1, (uint8_t*)&uart_rx_qbuf[0], 1);
       }
 
       if(p_uart->rx_mode == UART_MODE_DMA)
@@ -189,7 +194,7 @@ uint32_t uartAvailable(uint8_t ch)
 
   if(p_uart->rx_mode == UART_MODE_INTERRUPT)
   {
-    ret = qbufferAvailable(&p_uart->qbuffer_rx);
+    ret = qbufferAvailable(&qbuffer[ch]);
   }
 
   return ret;
@@ -206,6 +211,12 @@ void uartFlush(uint8_t ch)
     p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
     p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
   }
+  if(p_uart->rx_mode == UART_MODE_INTERRUPT)
+  {
+    p_uart->qbuffer_rx.ptr_out  = 0;
+    p_uart->qbuffer_rx.ptr_in   = 0;
+  }
+
 }
 
 void uartPutch(uint8_t ch, uint8_t c)
@@ -238,6 +249,14 @@ int32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length)
   {
     case _DEF_UART1:
       if(p_uart->rx_mode == UART_MODE_DMA)
+      {
+        if(HAL_UART_Transmit(&huart1, p_data, length, 100) == HAL_OK)
+        {
+          ret = length;
+        }
+      }
+
+      if(p_uart->rx_mode == UART_MODE_INTERRUPT)
       {
         if(HAL_UART_Transmit(&huart1, p_data, length, 100) == HAL_OK)
         {
@@ -284,6 +303,20 @@ int32_t uartPrintf(uint8_t ch, const char *fmt, ...)
   va_end(args);
 
   return ret;
+}
+
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+  if(uart_tbl[_DEF_UART1].rx_mode == UART_MODE_INTERRUPT)
+  {
+    qbufferWrite(&qbuffer[_DEF_UART1], &qbuffer[_DEF_UART1].p_buf[0], 1); //uart rx 수신데이터를 큐버퍼에 쓴다.
+
+    HAL_UART_Receive_IT(&huart1, (uint8_t*)&uart_rx_qbuf[0], 1);  //수신인터럽트를 다시 활성화 한다.
+  }
+  else
+  {
+    return;
+  }
 }
 
 void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)

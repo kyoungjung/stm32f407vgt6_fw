@@ -50,6 +50,7 @@ void apMain(void)
     if(uartAvailable(_DEF_UART1) > 0)
     {
       rx_data = uartRead(_DEF_UART1);
+
       uartPrintf(_DEF_UART1, "rx data : %c %X\r\n", rx_data, rx_data);
     }
 

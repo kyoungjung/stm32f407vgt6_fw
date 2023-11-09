@@ -1,0 +1,23 @@
+00:36:49 **** Incremental Build of configuration Debug for project 07_uart_int_cubemx ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/07_uart_int_cubemx/src/common/core" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc -o "07_uart_int_cubemx.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\07_uart_int_cubemx\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="07_uart_int_cubemx.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 07_uart_int_cubemx.elf
+ 
+arm-none-eabi-size   07_uart_int_cubemx.elf 
+arm-none-eabi-objdump -h -S  07_uart_int_cubemx.elf  > "07_uart_int_cubemx.list"
+arm-none-eabi-objcopy  -O ihex  07_uart_int_cubemx.elf  "07_uart_int_cubemx.hex"
+   text	   data	    bss	    dec	    hex	filename
+  23412	    216	   2648	  26276	   66a4	07_uart_int_cubemx.elf
+arm-none-eabi-objcopy  -O binary  07_uart_int_cubemx.elf  "07_uart_int_cubemx.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 07_uart_int_cubemx.hex
+Finished building: 07_uart_int_cubemx.bin
+ 
+ 
+Finished building: 07_uart_int_cubemx.list
+ 
+
+00:36:50 Build Finished. 0 errors, 0 warnings. (took 960ms)
+
