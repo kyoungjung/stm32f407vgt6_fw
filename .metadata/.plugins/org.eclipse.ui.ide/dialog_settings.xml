@@ -7,6 +7,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\08_usb_cdc"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\07_uart_int_cubemx"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\06_uart_cubemx"/>
 			<item value="D:\git\stm32f407vgt6\stm32f407vgt6_fw\05_uart"/>

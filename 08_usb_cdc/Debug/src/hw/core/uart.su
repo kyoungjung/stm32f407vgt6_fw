@@ -1,0 +1,15 @@
+../src/hw/core/uart.c:56:6:uartInit	16	static
+../src/hw/core/uart.c:70:6:uartOpen	32	static
+../src/hw/core/uart.c:133:6:uartStartRx	24	static
+../src/hw/core/uart.c:164:6:uartClose	24	static
+../src/hw/core/uart.c:181:10:uartAvailable	24	static
+../src/hw/core/uart.c:203:6:uartFlush	24	static
+../src/hw/core/uart.c:222:6:uartPutch	16	static
+../src/hw/core/uart.c:227:9:uartGetch	24	static
+../src/hw/core/uart.c:241:9:uartWrite	32	static
+../src/hw/core/uart.c:271:9:uartRead	24	static
+../src/hw/core/uart.c:291:9:uartPrintf	292	static
+../src/hw/core/uart.c:308:6:HAL_UART_RxCpltCallback	16	static
+../src/hw/core/uart.c:322:6:HAL_UART_MspInit	48	static
+../src/hw/core/uart.c:374:6:HAL_UART_MspDeInit	16	static
+../src/hw/core/uart.c:401:6:Error_Handler	4	static,ignoring_inline_asm
