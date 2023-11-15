@@ -52,12 +52,10 @@ void apMain(void)
       ledToggle(_DEF_LED1);
     }
 
-    //usb cdc로 입력되는 데이터가 있다면
     if(cdcAvailable() > 0)
     {
-      //usb로 수신된 데이터를 변수에 저장
       rx_data = cdcRead();
-      //수신된 변수를 usb로 1바이트씩 write한다.
+
       cdcWrite(&rx_data, 1);
     }
   }
