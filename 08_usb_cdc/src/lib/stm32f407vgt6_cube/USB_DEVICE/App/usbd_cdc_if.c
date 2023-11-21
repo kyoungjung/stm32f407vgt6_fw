@@ -23,10 +23,42 @@
 
 /* USER CODE BEGIN INCLUDE */
 
+/*******************************************************************************/
+/* Line Coding Structure                                                       */
+/*-----------------------------------------------------------------------------*/
+/* Offset | Field       | Size | Value  | Description                          */
+/* 0      | dwDTERate   |   4  | Number |Data terminal rate, in bits per second*/
+/* 4      | bCharFormat |   1  | Number | Stop bits                            */
+/*                                        0 - 1 Stop bit                       */
+/*                                        1 - 1.5 Stop bits                    */
+/*                                        2 - 2 Stop bits                      */
+/* 5      | bParityType |  1   | Number | Parity                               */
+/*                                        0 - None                             */
+/*                                        1 - Odd                              */
+/*                                        2 - Even                             */
+/*                                        3 - Mark                             */
+/*                                        4 - Space                            */
+/* 6      | bDataBits  |   1   | Number Data bits (5, 6, 7, 8 or 16).          */
+/*******************************************************************************/
+
+USBD_CDC_LineCodingTypeDef          LineCoding =
+    {
+        115200,         //  baudrate
+        0x00,           //  stop bits
+        0x00,           //  Paritry
+        0x08            //  Number Data bits
+    };
+
 uint32_t ptr_in   = 0;
 uint32_t ptr_out  = 0;
 uint32_t rx_len   = 512;  //rx buffer length
 uint8_t rx_buf[512];
+
+void cdcFlush(void)
+{
+  ptr_in = 0;
+  ptr_out = 0;
+}
 
 /**
  *  @ usb 수신 버퍼에 들어있는 데이터 갯수 확인
@@ -115,6 +147,15 @@ uint32_t cdcWrite(uint8_t *p_data, uint32_t length)
 
   return 0;
 }
+
+/**
+ * @ 현재 baudrate를 확인하는 함수
+ */
+uint32_t cdcGetBaud(void)
+{
+  return LineCoding.bitrate;
+}
+
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -312,10 +353,30 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
   /* 6      | bDataBits  |   1   | Number Data bits (5, 6, 7, 8 or 16).          */
   /*******************************************************************************/
     case CDC_SET_LINE_CODING:
+      //외부에서 설정한 통신 파라미터를 구조체 변수에 저장한다.
+      LineCoding.bitrate     = (uint32_t)(pbuf[0] << 0);
+      LineCoding.bitrate    |= (uint32_t)(pbuf[1] << 8);
+      LineCoding.bitrate    |= (uint32_t)(pbuf[2] << 16);
+      LineCoding.bitrate    |= (uint32_t)(pbuf[3] << 24);
+      LineCoding.format     = pbuf[4];
+      LineCoding.paritytype = pbuf[5];
+      LineCoding.datatype   = pbuf[6];
 
     break;
 
     case CDC_GET_LINE_CODING:
+      //LineCoding 구조체 변수에 현재 저장된 통신파라미터값을 불러온다.
+      //-------> baudrate
+      pbuf[0] = (uint8_t)(LineCoding.bitrate >> 0 & 0x000000FF);
+      pbuf[1] = (uint8_t)(LineCoding.bitrate >> 8 & 0x000000FF);
+      pbuf[2] = (uint8_t)(LineCoding.bitrate >> 16 & 0x000000FF);
+      pbuf[3] = (uint8_t)(LineCoding.bitrate >> 24 & 0x000000FF);
+      //-------> Stop bits
+      pbuf[4] = (uint8_t)(LineCoding.format & 0xFF);
+      //-------> Parity
+      pbuf[5] = (uint8_t)(LineCoding.paritytype & 0xFF);
+      //-------> Number Data bits
+      pbuf[6] = (uint8_t)(LineCoding.datatype & 0xFF);
 
     break;
 

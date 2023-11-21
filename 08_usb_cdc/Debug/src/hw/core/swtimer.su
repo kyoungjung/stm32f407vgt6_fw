@@ -1,8 +1,0 @@
-../src/hw/core/swtimer.c:31:6:swtimerInit	16	static
-../src/hw/core/swtimer.c:59:6:swtimerISR	16	static
-../src/hw/core/swtimer.c:91:6:swtimerSet	24	static
-../src/hw/core/swtimer.c:101:6:swtimerStart	16	static
-../src/hw/core/swtimer.c:110:6:swtimerStop	16	static
-../src/hw/core/swtimer.c:118:6:swtimerReset	16	static
-../src/hw/core/swtimer.c:124:18:swtimerGetHandle	16	static
-../src/hw/core/swtimer.c:133:10:swtimerGetCounter	4	static

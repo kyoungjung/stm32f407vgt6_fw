@@ -25,6 +25,12 @@ DMA_HandleTypeDef hdma_rx;
 
 static qbuffer_t  qbuffer[UART_MAX_CH];
 
+extern void cdcFlush(void);
+extern uint32_t cdcAvailable(void);
+extern uint8_t cdcRead(void);
+extern void cdcDataIn(uint8_t rx_data);
+extern uint32_t cdcWrite(uint8_t *p_data, uint32_t length);
+extern uint32_t cdcGetBaud(void);
 void Error_Handler(void);
 
 /*
@@ -72,14 +78,13 @@ bool uartOpen(uint8_t ch, uint32_t baud)
   bool ret = true;
   uart_t  *p_uart;        //uart 핸들용 구조체 포인터 변수 선언
 
+  p_uart = &uart_tbl[ch];
 
   if(ch > UART_MAX_CH)    return false;
 
   switch(ch)
   {
     case _DEF_UART1:
-
-      p_uart = &uart_tbl[ch];
 
       p_uart->baud = baud;
       p_uart->is_open = true;
@@ -121,6 +126,11 @@ bool uartOpen(uint8_t ch, uint32_t baud)
       {
         uartStartRx(ch);
       }
+
+      break;
+
+    case _DEF_UART2:            //usb
+      p_uart->is_open = true;   //usb 통신채널이 오픈됨.
 
       break;
   }
@@ -186,17 +196,25 @@ uint32_t uartAvailable(uint8_t ch)
 
   p_uart = &uart_tbl[ch];
 
-  if(p_uart->rx_mode == UART_MODE_DMA)
+  switch(ch)
   {
-    qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
-    ret = qbufferAvailable(&qbuffer[ch]);
-  }
+    case _DEF_UART1:    //uart
+      if(p_uart->rx_mode == UART_MODE_DMA)
+      {
+        qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
+        ret = qbufferAvailable(&qbuffer[ch]);
+      }
 
-  if(p_uart->rx_mode == UART_MODE_INTERRUPT)
-  {
-    ret = qbufferAvailable(&qbuffer[ch]);
-  }
+      if(p_uart->rx_mode == UART_MODE_INTERRUPT)
+      {
+        ret = qbufferAvailable(&qbuffer[ch]);
+      }
+      break;
 
+    case _DEF_UART2:            //usb
+      ret = cdcAvailable();     //usb 수신버퍼 사용가능한지 확인
+      break;
+  }
   return ret;
 }
 
@@ -206,22 +224,39 @@ void uartFlush(uint8_t ch)
 
   p_uart = &uart_tbl[ch];
 
-  if(p_uart->rx_mode == UART_MODE_DMA)
+  switch(ch)
   {
-    p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
-    p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
-  }
-  if(p_uart->rx_mode == UART_MODE_INTERRUPT)
-  {
-    p_uart->qbuffer_rx.ptr_out  = 0;
-    p_uart->qbuffer_rx.ptr_in   = 0;
-  }
+    case _DEF_UART1:
+      if(p_uart->rx_mode == UART_MODE_DMA)
+      {
+        p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
+        p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
+      }
+      if(p_uart->rx_mode == UART_MODE_INTERRUPT)
+      {
+        p_uart->qbuffer_rx.ptr_out  = 0;
+        p_uart->qbuffer_rx.ptr_in   = 0;
+      }
+      break;
 
+    case _DEF_UART2:    //usb
+      cdcFlush();       //usb 버퍼 처리용 입출력 인덱스 변수 초기화
+      break;
+  }
 }
 
 void uartPutch(uint8_t ch, uint8_t c)
 {
-  uartWrite(ch, &ch, 1);
+  switch(ch)
+  {
+    case _DEF_UART1:
+      uartWrite(ch, &ch, 1);
+      break;
+
+    case _DEF_UART2:    //usb
+      cdcWrite(&c, 1);  //usb cdc로 1바이트 문자 write
+      break;
+  }
 }
 
 uint8_t uartGetch(uint8_t ch)
@@ -230,9 +265,23 @@ uint8_t uartGetch(uint8_t ch)
 
   if(ch >= HW_UART_MAX_CH)   return 0;
 
-  if(uartAvailable(ch) > 0)
+  switch(ch)
   {
-    ret = uartRead(ch);
+    case _DEF_UART1:
+      if(uartAvailable(ch) > 0)
+      {
+        ret = uartRead(ch);
+      }
+      break;
+
+    case _DEF_UART2:            //usb
+      if(cdcAvailable() > 0)
+      {
+        //usb 수신버퍼에 데이터가 있으면
+        //1바이트 읽어온다.
+        ret = cdcRead();
+      }
+      break;
   }
 
   return ret;
@@ -264,6 +313,11 @@ int32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length)
         }
       }
       break;
+
+    case _DEF_UART2:      //usb
+      //usb로 수신된 데이터를 길이만큼 write한다.
+      ret = cdcWrite(p_data, length);
+      break;
   }
 
   return ret;
@@ -283,6 +337,11 @@ uint8_t uartRead(uint8_t ch)
       qbufferRead(&qbuffer[ch], &ret, 1);
 
       break;
+
+    case _DEF_UART2:      //usb
+      //usb로 수신된 데이터를 읽어서 변수에 저장한다.
+      ret = cdcRead();
+      break;
   }
 
   return ret;
@@ -298,11 +357,37 @@ int32_t uartPrintf(uint8_t ch, const char *fmt, ...)
 
   len = vsnprintf(buf, 256, fmt, args);
 
-  ret = uartWrite(ch, (uint8_t*)buf, len);
+  switch(ch)
+  {
+    case _DEF_UART1:
+      ret = uartWrite(ch, (uint8_t*)buf, len);
+      break;
+
+    case _DEF_UART2:  //usb
+      //usb로 print한다.
+      ret = cdcWrite((uint8_t*)buf, len);
+      break;
+  }
 
   va_end(args);
 
   return ret;
+}
+
+uint32_t uartGetBaud(uint8_t ch)
+{
+  uint32_t baud;
+  switch(ch)
+  {
+    case _DEF_UART1:      //uart
+      break;
+
+    case _DEF_UART2:      //usb cdc
+      baud = cdcGetBaud();
+      break;
+  }
+
+  return baud;
 }
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)

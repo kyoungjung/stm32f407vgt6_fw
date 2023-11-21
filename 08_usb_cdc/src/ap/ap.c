@@ -13,12 +13,6 @@ void ledISR(void *arg)
   ledToggle(_DEF_LED3);     //led3 토글한다
 }
 
-extern uint32_t cdcAvailable(void);
-extern uint8_t cdcRead(void);
-extern void cdcDataIn(uint8_t rx_data);
-extern uint32_t cdcWrite(uint8_t *p_data, uint32_t length);
-
-
 void apInit(void)
 {
   swtimer_handle_t          h_led_timer;    //동작할 타이머 인덱스 변수
@@ -33,19 +27,35 @@ void apInit(void)
   swtimerStart(h_led_timer);    //swtimer 시작
 
   uartOpen(_DEF_UART1, 115200);
+  uartOpen(_DEF_UART2, 115200);
 
-  uartPrintf(_DEF_UART1, "UART 1 OPEN \r\n");
+  uartPrintf(_DEF_UART1, "UART 1(USART) OPEN \r\n");
+  uartPrintf(_DEF_UART2, "UART 2(USB)   OPEN \r\n");
 }
 
 void apMain(void)
 {
   uint32_t pre_time;
+  uint32_t pre_baud;  //baudrate값 저장변수
+
   pre_time = millis();
+
+  //usb cdc의 baudrate값을 저장한다.
+  pre_baud = uartGetBaud(_DEF_UART2);
 
   uint8_t rx_data;
 
   while(1)
   {
+    //최초의 usb baudrate와 현재 usb baudrate가 다르다면
+    if(pre_baud != uartGetBaud(_DEF_UART2))
+    {
+      //현재 설정한 baudrate값을 다시 저장하고,
+      pre_baud = uartGetBaud(_DEF_UART2);
+      //변경된 baudrate값을 출력한다.
+      uartPrintf(_DEF_UART2, "USB BaudRate Changed To %d \r\n", uartGetBaud(_DEF_UART2));
+    }
+
     if(millis() - pre_time >= 500)
     {
       pre_time = millis();
@@ -53,12 +63,12 @@ void apMain(void)
     }
 
     //usb cdc로 입력되는 데이터가 있다면
-    if(cdcAvailable() > 0)
+    if(uartAvailable(_DEF_UART2) > 0)
     {
       //usb로 수신된 데이터를 변수에 저장
-      rx_data = cdcRead();
-      //수신된 변수를 usb로 1바이트씩 write한다.
-      cdcWrite(&rx_data, 1);
+      rx_data = uartRead(_DEF_UART2);
+
+      uartPrintf(_DEF_UART2, "rx_data : 0x%X [%c] \r\n", rx_data, rx_data);
     }
   }
 }

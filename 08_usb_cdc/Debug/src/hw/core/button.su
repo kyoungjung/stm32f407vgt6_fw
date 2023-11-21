@@ -1,2 +1,0 @@
-../src/hw/core/button.c:29:6:buttonInit	16	static
-../src/hw/core/button.c:49:6:buttonGetPressed	24	static
