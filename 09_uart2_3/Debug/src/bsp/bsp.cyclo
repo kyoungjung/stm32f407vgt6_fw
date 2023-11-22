@@ -1,0 +1,5 @@
+bsp.c:16:6:bspInit	1
+bsp.c:49:6:delay	1
+bsp.c:54:10:millis	1
+bsp.c:79:13:SystemClock_Config	3
+bsp.c:125:13:Error_Handler	1
