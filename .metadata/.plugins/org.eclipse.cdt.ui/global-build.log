@@ -1127,3 +1127,382 @@ Finished building: 09_uart2_3.bin
  
 Finished building: 09_uart2_3.list
  
+23:23:29 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartStartRx':
+../src/hw/core/uart.c:164:73: error: 'uart_t' has no member named 'hdma'; did you mean 'hdma_rx'?
+  164 |         p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
+      |                                                                         ^~~~
+      |                                                                         hdma_rx
+make: *** [src/hw/core/subdir.mk:31: src/hw/core/uart.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:23:51 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartOpen':
+../src/hw/core/uart.c:132:23: warning: 'p_uart' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |       p_uart->is_open = true;   //usb ?†µ?‹ ì±„ë„?´ ?˜¤?”ˆ?¨.
+      |                       ^
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+23:24:13 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:24:32 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:25:08 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:25:41 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:26:02 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:26:40 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46800	    468	  10348	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:28:42 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+23:28:49 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:36:20 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:40:13 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:41:17 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:42:45 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:44:54 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46864	    468	  10348	  57680	   e150	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+23:59:12 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartOpen':
+../src/hw/core/uart.c:132:23: warning: 'p_uart' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |       p_uart->is_open = true;   //usb ?†µ?‹ ì±„ë„?´ ?˜¤?”ˆ?¨.
+      |                       ^
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+   text	   data	    bss	    dec	    hex	filename
+  46860	    468	  10348	  57676	   e14c	09_uart2_3.elf
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+ 
+Finished building: 09_uart2_3.bin
+ 
+Finished building: 09_uart2_3.list
+ 
+23:59:18 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46860	    468	  10348	  57676	   e14c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+00:06:34 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartOpen':
+../src/hw/core/uart.c:132:23: warning: 'p_uart' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |       p_uart->is_open = true;   //usb ?†µ?‹ ì±„ë„?´ ?˜¤?”ˆ?¨.
+      |                       ^
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  46832	    468	  10348	  57648	   e130	09_uart2_3.elf
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+00:06:39 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46832	    468	  10348	  57648	   e130	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+00:18:07 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'HAL_UART_MspInit':
+../src/hw/core/uart.c:436:11: warning: comparison between pointer and integer
+  436 |     p_uart>hdma_rx.Init.Channel = DMA_CHANNEL_4;
+      |           ^
+../src/hw/core/uart.c:436:33: error: lvalue required as left operand of assignment
+  436 |     p_uart>hdma_rx.Init.Channel = DMA_CHANNEL_4;
+      |                                 ^
+../src/hw/core/uart.c:437:11: warning: comparison between pointer and integer
+  437 |     p_uart>hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+      |           ^
+../src/hw/core/uart.c:437:35: error: lvalue required as left operand of assignment
+  437 |     p_uart>hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+      |                                   ^
+../src/hw/core/uart.c:438:11: warning: comparison between pointer and integer
+  438 |     p_uart>hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+      |           ^
+../src/hw/core/uart.c:438:35: error: lvalue required as left operand of assignment
+  438 |     p_uart>hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+      |                                   ^
+../src/hw/core/uart.c:439:11: warning: comparison between pointer and integer
+  439 |     p_uart>hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+      |           ^
+../src/hw/core/uart.c:439:32: error: lvalue required as left operand of assignment
+  439 |     p_uart>hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+      |                                ^
+../src/hw/core/uart.c:440:11: warning: comparison between pointer and integer
+  440 |     p_uart>hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+      |           ^
+../src/hw/core/uart.c:440:45: error: lvalue required as left operand of assignment
+  440 |     p_uart>hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+      |                                             ^
+../src/hw/core/uart.c:441:11: warning: comparison between pointer and integer
+  441 |     p_uart>hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+      |           ^
+../src/hw/core/uart.c:441:42: error: lvalue required as left operand of assignment
+  441 |     p_uart>hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+      |                                          ^
+../src/hw/core/uart.c:442:11: warning: comparison between pointer and integer
+  442 |     p_uart>hdma_rx.Init.Mode = DMA_CIRCULAR;
+      |           ^
+../src/hw/core/uart.c:442:30: error: lvalue required as left operand of assignment
+  442 |     p_uart>hdma_rx.Init.Mode = DMA_CIRCULAR;
+      |                              ^
+../src/hw/core/uart.c:443:11: warning: comparison between pointer and integer
+  443 |     p_uart>hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+      |           ^
+../src/hw/core/uart.c:443:34: error: lvalue required as left operand of assignment
+  443 |     p_uart>hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+      |                                  ^
+../src/hw/core/uart.c:444:11: warning: comparison between pointer and integer
+  444 |     p_uart>hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+      |           ^
+../src/hw/core/uart.c:444:34: error: lvalue required as left operand of assignment
+  444 |     p_uart>hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+      |                                  ^
+../src/hw/core/uart.c:445:28: error: incompatible type for argument 1 of 'HAL_DMA_Init'
+  445 |     if (HAL_DMA_Init(p_uart->hdma_rx) != HAL_OK)
+      |                      ~~~~~~^~~~~~~~~
+      |                            |
+      |                            DMA_HandleTypeDef {aka struct __DMA_HandleTypeDef}
+In file included from D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/stm32f4xx_hal_conf.h:287,
+                 from D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/bsp.h:12,
+                 from D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw/hw_def.h:13,
+                 from D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include/uart.h:11,
+                 from ../src/hw/core/uart.c:9:
+D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h:652:51: note: expected 'DMA_HandleTypeDef *' {aka 'struct __DMA_HandleTypeDef *'} but argument is of type 'DMA_HandleTypeDef' {aka 'struct __DMA_HandleTypeDef'}
+  652 | HAL_StatusTypeDef HAL_DMA_Init(DMA_HandleTypeDef *hdma);
+      |                                ~~~~~~~~~~~~~~~~~~~^~~~
+make: *** [src/hw/core/subdir.mk:31: src/hw/core/uart.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:18:20 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'HAL_UART_MspInit':
+../src/hw/core/uart.c:436:11: warning: comparison between pointer and integer
+  436 |     p_uart>hdma_rx.Init.Channel = DMA_CHANNEL_4;
+      |           ^
+../src/hw/core/uart.c:436:33: error: lvalue required as left operand of assignment
+  436 |     p_uart>hdma_rx.Init.Channel = DMA_CHANNEL_4;
+      |                                 ^
+../src/hw/core/uart.c:437:11: warning: comparison between pointer and integer
+  437 |     p_uart>hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+      |           ^
+../src/hw/core/uart.c:437:35: error: lvalue required as left operand of assignment
+  437 |     p_uart>hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+      |                                   ^
+../src/hw/core/uart.c:438:11: warning: comparison between pointer and integer
+  438 |     p_uart>hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+      |           ^
+../src/hw/core/uart.c:438:35: error: lvalue required as left operand of assignment
+  438 |     p_uart>hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+      |                                   ^
+../src/hw/core/uart.c:439:11: warning: comparison between pointer and integer
+  439 |     p_uart>hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+      |           ^
+../src/hw/core/uart.c:439:32: error: lvalue required as left operand of assignment
+  439 |     p_uart>hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+      |                                ^
+../src/hw/core/uart.c:440:11: warning: comparison between pointer and integer
+  440 |     p_uart>hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+      |           ^
+../src/hw/core/uart.c:440:45: error: lvalue required as left operand of assignment
+  440 |     p_uart>hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+      |                                             ^
+../src/hw/core/uart.c:441:11: warning: comparison between pointer and integer
+  441 |     p_uart>hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+      |           ^
+../src/hw/core/uart.c:441:42: error: lvalue required as left operand of assignment
+  441 |     p_uart>hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+      |                                          ^
+../src/hw/core/uart.c:442:11: warning: comparison between pointer and integer
+  442 |     p_uart>hdma_rx.Init.Mode = DMA_CIRCULAR;
+      |           ^
+../src/hw/core/uart.c:442:30: error: lvalue required as left operand of assignment
+  442 |     p_uart>hdma_rx.Init.Mode = DMA_CIRCULAR;
+      |                              ^
+../src/hw/core/uart.c:443:11: warning: comparison between pointer and integer
+  443 |     p_uart>hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+      |           ^
+../src/hw/core/uart.c:443:34: error: lvalue required as left operand of assignment
+  443 |     p_uart>hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+      |                                  ^
+../src/hw/core/uart.c:444:11: warning: comparison between pointer and integer
+  444 |     p_uart>hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+      |           ^
+../src/hw/core/uart.c:444:34: error: lvalue required as left operand of assignment
+  444 |     p_uart>hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+      |                                  ^
+make: *** [src/hw/core/subdir.mk:31: src/hw/core/uart.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+00:18:35 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/ap" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/hw" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/ldscript" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/bsp/startup" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/include" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/common/core" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/git/stm32f407vgt6/stm32f407vgt6_fw/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartOpen':
+../src/hw/core/uart.c:132:23: warning: 'p_uart' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |       p_uart->is_open = true;   //usb ?†µ?‹ ì±„ë„?´ ?˜¤?”ˆ?¨.
+      |                       ^
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+   text	   data	    bss	    dec	    hex	filename
+  46848	    468	  10348	  57664	   e140	09_uart2_3.elf
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+00:18:44 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46848	    468	  10348	  57664	   e140	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+00:19:02 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46848	    468	  10348	  57664	   e140	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+00:19:41 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  46848	    468	  10348	  57664	   e140	09_uart2_3.elf
+Finished building: default.size.stdout
+ 

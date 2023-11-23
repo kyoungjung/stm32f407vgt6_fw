@@ -103,7 +103,7 @@ bool uartOpen(uint8_t ch, uint32_t baud)
       HAL_UART_DeInit(&p_uart->handle);
 
       //qbufferCreate(&qbuffer[ch], &uart_rx_qbuf[0], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
-      qbufferCreate(&p_uart->qbuffer_rx , &uart_rx_qbuf[0], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
+      qbufferCreate(&p_uart->qbuffer_rx , uart_rx_qbuf[ch], UART_RX_QBUF_LENGTH);    //큐 버퍼 생성
 
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
@@ -116,7 +116,8 @@ bool uartOpen(uint8_t ch, uint32_t baud)
         HAL_NVIC_EnableIRQ(DMA2_Stream2_IRQn);
       }
 
-      if(HAL_UART_Init(&huart1) != HAL_OK)                                          //uart 초기화
+      //if(HAL_UART_Init(&huart1) != HAL_OK)                                          //uart 초기화
+      if(HAL_UART_Init(&p_uart->handle) != HAL_OK)                                          //uart 초기화
       {
         ret = false;
       }
@@ -155,15 +156,13 @@ void uartStartRx(uint8_t ch)
 
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
-        //if(HAL_UART_Receive_DMA(&p_uart->handle, (uint8_t*)&uart_rx_qbuf[0], 256) != HAL_OK)
-        if(HAL_UART_Receive_DMA(&huart1, (uint8_t*)&uart_rx_qbuf[0], 256) != HAL_OK)
+        if(HAL_UART_Receive_DMA(&p_uart->handle, (uint8_t*)p_uart->qbuffer_rx.p_buf, p_uart->qbuffer_rx.length) != HAL_OK)
+        //if(HAL_UART_Receive_DMA(&huart1, (uint8_t*)&uart_rx_qbuf[0], 256) != HAL_OK)
         {
           return;
         }
-        //p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma.Instance->NDTR;
-        qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
+        //p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma_rx.Instance->NDTR;
         //p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
-        qbuffer[ch].ptr_out = qbuffer[ch].ptr_in;
       }
       break;
   }
@@ -199,8 +198,10 @@ uint32_t uartAvailable(uint8_t ch)
     case _DEF_UART1:    //uart
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
-        qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
-        ret = qbufferAvailable(&qbuffer[ch]);
+        //qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
+        p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma_rx.Instance->NDTR;
+        //ret = qbufferAvailable(&qbuffer[ch]);
+        ret = qbufferAvailable(&p_uart->qbuffer_rx);
       }
 
       if(p_uart->rx_mode == UART_MODE_INTERRUPT)
@@ -297,7 +298,7 @@ int32_t uartWrite(uint8_t ch, uint8_t *p_data, uint32_t length)
     case _DEF_UART1:
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
-        if(HAL_UART_Transmit(&huart1, p_data, length, 100) == HAL_OK)
+        if(HAL_UART_Transmit(&p_uart->handle, p_data, length, 100) == HAL_OK)
         {
           ret = length;
         }
@@ -332,7 +333,7 @@ uint8_t uartRead(uint8_t ch)
     case _DEF_UART1:
 
       //qbufferRead(&p_uart->qbuffer_rx, &ret, 1);
-      qbufferRead(&qbuffer[ch], &ret, 1);
+      qbufferRead(&p_uart->qbuffer_rx, &ret, 1);
 
       break;
 
@@ -428,22 +429,25 @@ void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
 
     /* USART1 DMA Init */
     /* USART1_RX Init */
-    hdma_usart1_rx.Instance = DMA2_Stream2;
-    hdma_usart1_rx.Init.Channel = DMA_CHANNEL_4;
-    hdma_usart1_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
-    hdma_usart1_rx.Init.PeriphInc = DMA_PINC_DISABLE;
-    hdma_usart1_rx.Init.MemInc = DMA_MINC_ENABLE;
-    hdma_usart1_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
-    hdma_usart1_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
-    hdma_usart1_rx.Init.Mode = DMA_CIRCULAR;
-    hdma_usart1_rx.Init.Priority = DMA_PRIORITY_LOW;
-    hdma_usart1_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
-    if (HAL_DMA_Init(&hdma_usart1_rx) != HAL_OK)
+
+    uart_t *p_uart = &uart_tbl[_DEF_UART1];
+
+    p_uart->hdma_rx.Instance = DMA2_Stream2;
+    p_uart->hdma_rx.Init.Channel = DMA_CHANNEL_4;
+    p_uart->hdma_rx.Init.Direction = DMA_PERIPH_TO_MEMORY;
+    p_uart->hdma_rx.Init.PeriphInc = DMA_PINC_DISABLE;
+    p_uart->hdma_rx.Init.MemInc = DMA_MINC_ENABLE;
+    p_uart->hdma_rx.Init.PeriphDataAlignment = DMA_PDATAALIGN_BYTE;
+    p_uart->hdma_rx.Init.MemDataAlignment = DMA_MDATAALIGN_BYTE;
+    p_uart->hdma_rx.Init.Mode = DMA_CIRCULAR;
+    p_uart->hdma_rx.Init.Priority = DMA_PRIORITY_LOW;
+    p_uart->hdma_rx.Init.FIFOMode = DMA_FIFOMODE_DISABLE;
+    if (HAL_DMA_Init(&p_uart->hdma_rx) != HAL_OK)
     {
       Error_Handler();
     }
 
-    __HAL_LINKDMA(uartHandle,hdmarx,hdma_usart1_rx);
+    __HAL_LINKDMA(&p_uart->handle,hdmarx,p_uart->hdma_rx);
 
     /* USART1 interrupt Init */
     HAL_NVIC_SetPriority(USART1_IRQn, 0, 0);

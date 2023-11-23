@@ -44,6 +44,7 @@ void apMain(void)
   pre_baud = uartGetBaud(_DEF_UART2);
 
   uint8_t rx_data;
+  uint8_t rx_data1;
 
   while(1)
   {
@@ -69,6 +70,14 @@ void apMain(void)
       rx_data = uartRead(_DEF_UART2);
 
       uartPrintf(_DEF_UART2, "rx_data : 0x%X [%c] \r\n", rx_data, rx_data);
+    }
+
+    if(uartAvailable(_DEF_UART1) > 0)   //물리적 uart
+    {
+      //usb로 수신된 데이터를 변수에 저장
+      rx_data1 = uartRead(_DEF_UART1);
+
+      uartPrintf(_DEF_UART1, "rx_data1 : 0x%X [%c] \r\n", rx_data1, rx_data1);
     }
   }
 }
