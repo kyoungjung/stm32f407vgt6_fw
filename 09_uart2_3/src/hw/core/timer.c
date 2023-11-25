@@ -215,12 +215,12 @@ void timerCallBack(TIM_HandleTypeDef *htim)
   }
 }
 
-
+#if 0
 void TIM3_IRQHandler(void)
 {
   HAL_TIM_IRQHandler(&timer_tbl[HWTIMER_CH1].hTIM);
 }
-
+#endif
 void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef *htim)
 {
   timerCallBack(htim);

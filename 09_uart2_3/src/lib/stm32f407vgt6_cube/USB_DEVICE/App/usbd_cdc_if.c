@@ -61,7 +61,7 @@ void cdcFlush(void)
 }
 
 /**
- *  @ usb ìˆ˜ì‹  ë²„í¼ì— ë“¤ì–´ìˆëŠ” ë°ì´í„° ê°¯ìˆ˜ í™•ì¸
+ *  @ usb ?ˆ˜?‹  ë²„í¼?— ?“¤?–´?ˆ?Š” ?°?´?„° ê°??ˆ˜ ?™•?¸
  */
 uint32_t cdcAvailable(void)
 {
@@ -73,8 +73,8 @@ uint32_t cdcAvailable(void)
 }
 
 /*
- * @ ìˆ˜ì‹ ë²„í¼ì—ì„œ ë°ì´í„°ë¥¼ ì½ëŠ”ë‹¤.
- * ë°ì´í„° ì½ì€ í›„ ì¶œë ¥ ì¸ë±ìŠ¤ 1 ì¦ê°€ì‹œí‚¨ë‹¤.
+ * @ ?ˆ˜?‹ ë²„í¼?—?„œ ?°?´?„°ë¥? ?½?Š”?‹¤.
+ * ?°?´?„° ?½?? ?›„ ì¶œë ¥ ?¸?±?Š¤ 1 ì¦ê??‹œ?‚¨?‹¤.
  * */
 uint8_t cdcRead(void)
 {
@@ -91,56 +91,56 @@ uint8_t cdcRead(void)
 }
 
 /*
- * @ ìˆ˜ì‹ ë²„í¼ì— ë°ì´í„°ë¥¼ writeí•œë‹¤.
- * ë°ì´í„° write í›„ì— ì…ë ¥ ì¸ë±ìŠ¤ 1 ì¦ê°€ì‹œí‚¨ë‹¤.
+ * @ ?ˆ˜?‹ ë²„í¼?— ?°?´?„°ë¥? write?•œ?‹¤.
+ * ?°?´?„° write ?›„?— ?…? ¥ ?¸?±?Š¤ 1 ì¦ê??‹œ?‚¨?‹¤.
  * */
 void cdcDataIn(uint8_t rx_data)
 {
   uint32_t next_ptr_in;
 
-  rx_buf[ptr_in] = rx_data;   //ìˆ˜ì‹ ë°ì´í„° ìˆ˜ì‹ ë²„í¼ì— ì…ë ¥
+  rx_buf[ptr_in] = rx_data;   //?ˆ˜?‹ ?°?´?„° ?ˆ˜?‹ ë²„í¼?— ?…? ¥
 
-  //next_ptr_inì€ í˜„ì¬ ì…ë ¥ ì¸ë±ìŠ¤ì˜ ë‹¤ìŒ ì¸ë±ìŠ¤ë¥¼ ì˜ë¯¸í•¨
+  //next_ptr_in?? ?˜„?¬ ?…? ¥ ?¸?±?Š¤?˜ ?‹¤?Œ ?¸?±?Š¤ë¥? ?˜ë¯¸í•¨
   next_ptr_in = (ptr_in + 1) % rx_len;
 
-  //í˜„ì¬ì˜ ë‹¤ìŒ ì…ë ¥ ì¸ë±ìŠ¤ê°€ ì¶œë ¥ ì¸ë±ìŠ¤ì™€ ë‹¤ë¥´ë©´
-  //(ê°™ìœ¼ë©´ ë²„í¼ full ìƒíƒœì„)
+  //?˜„?¬?˜ ?‹¤?Œ ?…? ¥ ?¸?±?Š¤ê°? ì¶œë ¥ ?¸?±?Š¤?? ?‹¤ë¥´ë©´
+  //(ê°™ìœ¼ë©? ë²„í¼ full ?ƒ?ƒœ?„)
   if(next_ptr_in != ptr_out)
   {
-    //ì…ë ¥ì¸ë±ìŠ¤ë¥¼ 1 ì¦ê°€ì‹œí‚¨ë‹¤.
+    //?…? ¥?¸?±?Š¤ë¥? 1 ì¦ê??‹œ?‚¨?‹¤.
     ptr_in = next_ptr_in;
   }
 }
 
 /*
- * @ ì…ë ¥ëœ ë°ì´í„°ë¥¼ ê¸¸ì´ë§Œí¼ usbë¡œ ì „ì†¡í•œë‹¤.
+ * @ ?…? ¥?œ ?°?´?„°ë¥? ê¸¸ì´ë§Œí¼ usbë¡? ? „?†¡?•œ?‹¤.
  * */
 uint32_t cdcWrite(uint8_t *p_data, uint32_t length)
 {
-  uint32_t pre_time;  //íƒ€ì„ì•„ì›ƒ ì²˜ë¦¬ìš© ë³€ìˆ˜
+  uint32_t pre_time;  //???„?•„?›ƒ ì²˜ë¦¬?š© ë³??ˆ˜
   uint8_t state;
 
-  //í˜„ì¬ íƒ€ì´ë¨¸ ì¹´ìš´í„° ê°’ì„ ì €ì¥
+  //?˜„?¬ ???´ë¨? ì¹´ìš´?„° ê°’ì„ ???¥
   pre_time = millis();
 
   while(1)
   {
-    //usbë¡œ ë°ì´í„° ì „ì†¡ í›„ ê²°ê³¼ë¥¼ ë³€ìˆ˜ì— ì €ì¥
+    //usbë¡? ?°?´?„° ? „?†¡ ?›„ ê²°ê³¼ë¥? ë³??ˆ˜?— ???¥
     state =CDC_Transmit_FS(p_data, length);
 
     if(state == USBD_OK)
     {
-      //ì „ì†¡ ì„±ê³µ ì‹œ ê¸¸ì´ ë¦¬í„´
+      //? „?†¡ ?„±ê³? ?‹œ ê¸¸ì´ ë¦¬í„´
       return length;
     }
     else if(state == USBD_FAIL)
     {
-      //ì „ì†¡ì‹¤íŒ¨ ì‹œ ë¦¬í„´
+      //? „?†¡?‹¤?Œ¨ ?‹œ ë¦¬í„´
       return 0;
     }
     if(millis() - pre_time >= 100)
     {
-      //íƒ€ì„ì•„ì›ƒ ë°œìƒ ì‹œ ë£¨í”„íƒˆì¶œ
+      //???„?•„?›ƒ ë°œìƒ ?‹œ ë£¨í”„?ƒˆì¶?
       break;
     }
   }
@@ -149,7 +149,7 @@ uint32_t cdcWrite(uint8_t *p_data, uint32_t length)
 }
 
 /**
- * @ í˜„ì¬ baudrateë¥¼ í™•ì¸í•˜ëŠ” í•¨ìˆ˜
+ * @ ?˜„?¬ baudrateë¥? ?™•?¸?•˜?Š” ?•¨?ˆ˜
  */
 uint32_t cdcGetBaud(void)
 {
@@ -353,7 +353,7 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
   /* 6      | bDataBits  |   1   | Number Data bits (5, 6, 7, 8 or 16).          */
   /*******************************************************************************/
     case CDC_SET_LINE_CODING:
-      //ì™¸ë¶€ì—ì„œ ì„¤ì •í•œ í†µì‹  íŒŒë¼ë¯¸í„°ë¥¼ êµ¬ì¡°ì²´ ë³€ìˆ˜ì— ì €ì¥í•œë‹¤.
+      //?™¸ë¶??—?„œ ?„¤? •?•œ ?†µ?‹  ?ŒŒ?¼ë¯¸í„°ë¥? êµ¬ì¡°ì²? ë³??ˆ˜?— ???¥?•œ?‹¤.
       LineCoding.bitrate     = (uint32_t)(pbuf[0] << 0);
       LineCoding.bitrate    |= (uint32_t)(pbuf[1] << 8);
       LineCoding.bitrate    |= (uint32_t)(pbuf[2] << 16);
@@ -365,7 +365,7 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
     break;
 
     case CDC_GET_LINE_CODING:
-      //LineCoding êµ¬ì¡°ì²´ ë³€ìˆ˜ì— í˜„ì¬ ì €ì¥ëœ í†µì‹ íŒŒë¼ë¯¸í„°ê°’ì„ ë¶ˆëŸ¬ì˜¨ë‹¤.
+      //LineCoding êµ¬ì¡°ì²? ë³??ˆ˜?— ?˜„?¬ ???¥?œ ?†µ?‹ ?ŒŒ?¼ë¯¸í„°ê°’ì„ ë¶ˆëŸ¬?˜¨?‹¤.
       //-------> baudrate
       pbuf[0] = (uint8_t)(LineCoding.bitrate >> 0 & 0x000000FF);
       pbuf[1] = (uint8_t)(LineCoding.bitrate >> 8 & 0x000000FF);
@@ -417,7 +417,7 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
   USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
   USBD_CDC_ReceivePacket(&hUsbDeviceFS);
 
-  //usb ìˆ˜ì‹  ë°ì´í„° ìˆ˜ì‹  ë°ì´í„° ê¸¸ì´ë§Œí¼ ìˆ˜ì‹ ë²„í¼ì— ì €ì¥
+  //usb ?ˆ˜?‹  ?°?´?„° ?ˆ˜?‹  ?°?´?„° ê¸¸ì´ë§Œí¼ ?ˆ˜?‹ ë²„í¼?— ???¥
   for(int i=0;i<*Len;i++)
   {
     cdcDataIn(Buf[i]);

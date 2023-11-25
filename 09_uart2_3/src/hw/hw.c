@@ -8,9 +8,6 @@
 
 #include "hw.h"
 
-
-
-
 void hwInit(void)
 {
   bspInit();
@@ -18,5 +15,5 @@ void hwInit(void)
   buttonInit();
   timerInit();
   swtimerInit();
-  uartInit();
+  //uartInit();
 }

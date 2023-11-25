@@ -25,6 +25,6 @@
 #define      HW_SW_TIMER_MAX        8
 
 #define _USE_HW_UART
-#define     HW_UART_MAX_CH          2
+#define     HW_UART_MAX_CH          4
 
 #endif /* SRC_HW_HW_DEF_H_ */

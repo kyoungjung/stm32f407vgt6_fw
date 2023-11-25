@@ -5,7 +5,6 @@ timer.c:126:6:timerAttachInterrupt	2
 timer.c:144:6:timerDetachInterrupt	2
 timer.c:158:6:timerStart	6
 timer.c:194:6:timerCallBack	4
-timer.c:219:6:TIM3_IRQHandler	1
 timer.c:224:6:HAL_TIM_OC_DelayElapsedCallback	1
 timer.c:230:6:HAL_TIM_Base_MspInit	2
 timer.c:241:6:HAL_TIM_Base_MspDeInit	2

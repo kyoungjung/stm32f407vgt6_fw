@@ -1,10 +1,10 @@
-00:19:41 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+01:25:36 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
 make -j16 all 
 arm-none-eabi-size   09_uart2_3.elf 
    text	   data	    bss	    dec	    hex	filename
-  46848	    468	  10348	  57664	   e140	09_uart2_3.elf
+  44624	    436	  11148	  56208	   db90	09_uart2_3.elf
 Finished building: default.size.stdout
  
 
-00:19:41 Build Finished. 0 errors, 0 warnings. (took 571ms)
+01:25:36 Build Finished. 0 errors, 0 warnings. (took 584ms)
 
