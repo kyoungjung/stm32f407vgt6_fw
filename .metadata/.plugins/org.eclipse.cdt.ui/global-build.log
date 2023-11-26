@@ -361,3 +361,10 @@ arm-none-eabi-size   09_uart2_3.elf
   44624	    436	  11148	  56208	   db90	09_uart2_3.elf
 Finished building: default.size.stdout
  
+23:28:48 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44624	    436	  11148	  56208	   db90	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
