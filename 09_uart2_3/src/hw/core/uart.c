@@ -237,19 +237,17 @@ void uartStartRx(uint8_t ch)
     case _DEF_UART1:
       if(p_uart->rx_mode == UART_MODE_INTERRUPT)
       {
-        //HAL_UART_Receive_IT(&p_uart->handle, p_uart->rx_buf, 1);
-        HAL_UART_Receive_IT(&huart1, (uint8_t*)&uart_rx_qbuf[0], 1);
+        HAL_UART_Receive_IT(&p_uart->handle, (uint8_t*)&uart_rx_qbuf[0], 1);
       }
 
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
         if(HAL_UART_Receive_DMA(&p_uart->handle, (uint8_t*)p_uart->qbuffer_rx.p_buf, p_uart->qbuffer_rx.length) != HAL_OK)
-        //if(HAL_UART_Receive_DMA(&huart1, (uint8_t*)&uart_rx_qbuf[0], 256) != HAL_OK)
         {
           return;
         }
-        //p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma_rx.Instance->NDTR;
-        //p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
+        p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma_rx.Instance->NDTR;
+        p_uart->qbuffer_rx.ptr_out = p_uart->qbuffer_rx.ptr_in;
       }
       break;
 
@@ -305,10 +303,10 @@ uint32_t uartAvailable(uint8_t ch)
     case _DEF_UART1:    //uart
       if(p_uart->rx_mode == UART_MODE_DMA)
       {
-        //qbuffer[ch].ptr_in = qbuffer[ch].length - hdma_usart1_rx.Instance->NDTR;
         p_uart->qbuffer_rx.ptr_in = p_uart->qbuffer_rx.length - p_uart->hdma_rx.Instance->NDTR;
-        //ret = qbufferAvailable(&qbuffer[ch]);
         ret = qbufferAvailable(&p_uart->qbuffer_rx);
+        uartPrintf(_DEF_UART4, "%d   %d   %d  %d\r\n",
+                   p_uart->qbuffer_rx.ptr_in, p_uart->qbuffer_rx.length, p_uart->hdma_rx.Instance->NDTR, ret);
       }
 
       if(p_uart->rx_mode == UART_MODE_INTERRUPT)
@@ -507,23 +505,26 @@ uint8_t uartRead(uint8_t ch)
   uint8_t ret = 0;
 
   uart_t  *p_uart;
-  p_uart = &uart_tbl[ch];
 
   switch(ch)
   {
     case _DEF_UART1:
+      p_uart = &uart_tbl[ch];
       qbufferRead(&p_uart->qbuffer_rx, &ret, 1);
       break;
 
     case _DEF_UART2:
+      p_uart = &uart_tbl[ch];
       qbufferRead(&p_uart->qbuffer_rx, &ret, 1);
       break;
 
     case _DEF_UART3:
+      p_uart = &uart_tbl[ch];
       qbufferRead(&p_uart->qbuffer_rx, &ret, 1);
       break;
 
     case _DEF_UART4:      //usb
+      p_uart = &uart_tbl[ch];
       //usb로 수신된 데이터를 읽어서 변수에 저장한다.
       ret = cdcRead();
       break;
