@@ -1,6 +1,6 @@
-qbuffer.c:11:6:qbufferInit	1
-qbuffer.c:16:6:qbufferCreate	2
-qbuffer.c:35:6:qbufferWrite	5
-qbuffer.c:79:6:qbufferRead	4
-qbuffer.c:139:10:qbufferAvailable	1
-qbuffer.c:149:6:qbufferFlush	1
+../src/common/core/qbuffer.c:11:6:qbufferInit	1
+../src/common/core/qbuffer.c:16:6:qbufferCreate	2
+../src/common/core/qbuffer.c:35:6:qbufferWrite	4
+../src/common/core/qbuffer.c:111:6:qbufferRead	4
+../src/common/core/qbuffer.c:176:10:qbufferAvailable	1
+../src/common/core/qbuffer.c:187:6:qbufferFlush	1

@@ -1,2 +1,2 @@
-button.c:29:6:buttonInit	2
-button.c:49:6:buttonGetPressed	3
+../src/hw/core/button.c:29:6:buttonInit	2
+../src/hw/core/button.c:49:6:buttonGetPressed	3

@@ -31,6 +31,7 @@
 		<item key="caseSensitive" value="false"/>
 		<item key="searchFlags" value="227191"/>
 		<list key="previousPatterns">
+			<item value="NDTR"/>
 			<item value="uartStartRx"/>
 			<item value="HAL_NVIC_SetPriority"/>
 			<item value="DMA2_Stream5"/>

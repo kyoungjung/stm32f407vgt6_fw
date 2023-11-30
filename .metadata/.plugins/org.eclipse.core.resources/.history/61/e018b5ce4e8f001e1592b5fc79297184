@@ -1,0 +1,192 @@
+/*
+ * qbuffer.c
+ *
+ *  Created on: 2023. 9. 25.
+ *      Author: kjkim
+ */
+
+
+#include "qbuffer.h"
+
+void qbufferInit(void)
+{
+
+}
+
+bool qbufferCreate(qbuffer_t *p_node, uint8_t *p_buf, uint32_t length)
+{
+  bool ret = true;
+
+  //q buffer 입/출력 인덱스 초기화
+  p_node->ptr_in    = 0;
+  p_node->ptr_out   = 0;
+  p_node->p_buf     = p_buf;
+  p_node->length    = length;
+
+  if(p_node->p_buf == NULL)   //생성할 버퍼가 null이면 비정상 리턴
+  {
+    p_node->length = 0;
+    ret = false;
+  }
+
+  return ret;
+}
+
+bool qbufferWrite(qbuffer_t *p_node, uint8_t *p_buf, uint32_t length)
+{
+#if 1
+
+  bool ret = true;
+  uint32_t next_in;
+
+  for(int i=0;i<length;i++)
+  {
+    //next_in 변수에 in 인덱스에 +1 증가한 인덱스값을 저장한다.
+    next_in = (p_node->ptr_in + 1) % p_node->length;
+
+    //next_index(현재 인덱스에서 1증가한 인덱스값)이 out인덱스와 다르다면
+    //  -> write할 공간이 있다면
+    if(next_in != p_node->ptr_out)
+    {
+      //큐버퍼가 null이 아니면
+      if(p_node->p_buf != NULL)
+      {
+        //수신데이터를 큐버퍼에 write한다.
+        p_node->p_buf[p_node->ptr_in] = p_buf[i];
+      }
+      p_node->ptr_in = next_in;
+    }
+    else
+    {
+      //write할 공간이 없다면(buffer full status)
+      ret = false;
+      break;
+    }
+  }
+
+
+#else
+  bool ret = true;
+    uint32_t i;
+    uint32_t index;
+    uint32_t next_index;
+
+    if(p_node->p_buf == NULL)     return false;
+
+    for(i=0;i<length;i++)
+    {
+      index       = p_node->ptr_in;       //q 버퍼 입력 인덱스를 index에 저장
+      next_index  = p_node->ptr_in + 1;   //q 버퍼 입력 인덱스 1 증가한 값을 next_index에 저장
+
+      //next_index(현재 인덱스에서 1증가한 인덱스값)이 q버퍼 길이와 같다면
+      //큐버퍼 읽지 않고 쓰기만 하다보면....
+      //아래 조건을 만족하게 되고
+      //next_index가 0으로 초기화 된다.
+      //next_index가 0이 되면
+      //prt out 인덱스와 같아지므로 buffer full error를 반환한다.
+      if(next_index == p_node->length)
+      {
+        next_index = 0;   //next index 초기화
+      }
+
+      //next_index가 out 인덱스와 같지 않다는것은
+      //write할수 있는 버퍼 공간이 있다는 의미
+      if(next_index != p_node->ptr_out)
+      {
+        //외부에서 입력된 length 길이의 p_buf i번째 데이터를 정의된 큐버퍼 index번째에 저장
+        p_node->p_buf[index] = p_buf[i];
+        //in index 1증가
+        p_node->ptr_in   = next_index;
+      }
+      else
+      {
+        ret = false;    // buffer full error
+        break;          // stop loop
+      }
+    }
+#endif
+  return ret;
+}
+
+bool qbufferRead(qbuffer_t *p_node, uint8_t *p_data, uint32_t length)
+{
+  bool ret = true;
+
+#if 0
+  uint32_t i;
+  uint32_t index;
+  uint32_t next_index;
+
+  if(p_node->p_buf == NULL)         return false;
+
+  for(i=0;i<length;i++)
+  {
+    index       = p_node->ptr_out;
+    next_index  = p_node->ptr_out + 1;
+
+    //만약 큐버퍼 write없이 계속 read만 한다면
+    //아래 조건에 의해 next_index가 0이 된다.
+    //하지만 큐버퍼 read에서는 아래 조건에 도달하는 것 보다
+    //next_index가 ptr in과 같아질 수 있는 가능성이 더 크다.
+    //그렇게 되면 buffer empty error가 발생하게 된다.
+    if(next_index == p_node->length)
+    {
+      next_index = 0;
+    }
+
+    if(next_index != p_node->ptr_in)
+    {
+      p_data[i] = p_node->p_buf[index];
+      p_node->ptr_out = next_index;
+    }
+    else
+    {
+      ret = false;    //buffer empty error
+      break;          //stop loop
+    }
+  }
+  #endif
+
+  for(int i=0;i<length;i++)
+  {
+    if(p_node->p_buf != NULL)
+    {
+      p_data[i] = p_node->p_buf[p_node->ptr_out];
+    }
+    else
+    {
+      ret = false;
+      break;
+    }
+
+    if(p_node->ptr_out != p_node->ptr_in) // 꺼낼 데이터 존재한다면??
+    {
+      p_node->ptr_out = (p_node->ptr_out + 1) % p_node->length; //out 인덱스 1 증가
+    }
+    else  //꺼낼 데이터가 없다면??
+    {
+      ret = false;
+      break;
+    }
+  }
+
+  return ret;
+}
+
+uint32_t qbufferAvailable(qbuffer_t *p_node)
+{
+  uint32_t length = 0;
+
+  //최초 초기상태라면 length 0을 반환
+  length = (p_node->length + p_node->ptr_in - p_node->ptr_out) % p_node->length;
+  //length = (p_node->ptr_in - p_node->ptr_out) % p_node->length;
+  uartPrintf(_DEF_UART4, "in : %d  out : %d,  length : %d\r\n",
+             p_node->ptr_in, p_node->ptr_out, p_node->length);
+  return length;
+}
+
+void qbufferFlush(qbuffer_t *p_node)
+{
+  p_node->ptr_in = 0;
+  p_node->ptr_out = 0;
+}

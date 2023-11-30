@@ -15,5 +15,5 @@ void hwInit(void)
   buttonInit();
   timerInit();
   swtimerInit();
-  //uartInit();
+  uartInit();
 }

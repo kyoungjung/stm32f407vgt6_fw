@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -75,8 +75,8 @@ all: main-build
 main-build: 09_uart2_3.elf secondary-outputs
 
 # Tool invocations
-09_uart2_3.elf 09_uart2_3.map: $(OBJS) $(USER_OBJS) D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\git\stm32f407vgt6\stm32f407vgt6_fw\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+09_uart2_3.elf 09_uart2_3.map: $(OBJS) $(USER_OBJS) D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

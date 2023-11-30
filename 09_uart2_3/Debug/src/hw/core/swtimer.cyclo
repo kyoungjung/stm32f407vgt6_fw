@@ -1,8 +1,8 @@
-swtimer.c:31:6:swtimerInit	3
-swtimer.c:59:6:swtimerISR	6
-swtimer.c:91:6:swtimerSet	1
-swtimer.c:101:6:swtimerStart	2
-swtimer.c:110:6:swtimerStop	2
-swtimer.c:118:6:swtimerReset	1
-swtimer.c:124:18:swtimerGetHandle	1
-swtimer.c:133:10:swtimerGetCounter	1
+../src/hw/core/swtimer.c:31:6:swtimerInit	3
+../src/hw/core/swtimer.c:59:6:swtimerISR	6
+../src/hw/core/swtimer.c:91:6:swtimerSet	1
+../src/hw/core/swtimer.c:101:6:swtimerStart	2
+../src/hw/core/swtimer.c:110:6:swtimerStop	2
+../src/hw/core/swtimer.c:118:6:swtimerReset	1
+../src/hw/core/swtimer.c:124:18:swtimerGetHandle	1
+../src/hw/core/swtimer.c:133:10:swtimerGetCounter	1

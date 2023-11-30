@@ -789,3 +789,889 @@ Finished building: 09_uart2_3.bin
  
 Finished building: 09_uart2_3.list
  
+11:35:53 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/USB_DEVICE/Target/usbd_conf.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/USB_DEVICE/Target/usbd_conf.d" -MT"src/lib/stm32f407vgt6_cube/USB_DEVICE/Target/usbd_conf.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/USB_DEVICE/Target/usbd_conf.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.d" -MT"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_cdc_if.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_cdc_if.d" -MT"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_cdc_if.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_cdc_if.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_desc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_desc.d" -MT"src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_desc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usbd_desc.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.d" -MT"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.d" -MT"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.d" -MT"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.d" -MT"src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+../src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.c: In function 'MX_USB_DEVICE_Init':
+../src/lib/stm32f407vgt6_cube/USB_DEVICE/App/usb_device.c:73:5: warning: implicit declaration of function 'Error_Handler' [-Wimplicit-function-declaration]
+   73 |     Error_Handler();
+      |     ^~~~~~~~~~~~~
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.o"
+arm-none-eabi-gcc "../src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.d" -MT"src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.o"
+arm-none-eabi-gcc "../src/hw/core/button.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/button.d" -MT"src/hw/core/button.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/button.o"
+arm-none-eabi-gcc "../src/hw/core/led.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/led.d" -MT"src/hw/core/led.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/led.o"
+arm-none-eabi-gcc "../src/hw/core/swtimer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/swtimer.d" -MT"src/hw/core/swtimer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/swtimer.o"
+arm-none-eabi-gcc "../src/hw/core/timer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/timer.d" -MT"src/hw/core/timer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/timer.o"
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/timer.c: In function 'HAL_TIM_OC_DelayElapsedCallback':
+../src/hw/core/timer.c:227:3: warning: implicit declaration of function 'swtimerISR' [-Wimplicit-function-declaration]
+  227 |   swtimerISR();
+      |   ^~~~~~~~~~
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -x assembler-with-cpp -MMD -MP -MF"src/bsp/startup/startup_stm32f407vgtx.d" -MT"src/bsp/startup/startup_stm32f407vgtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/startup/startup_stm32f407vgtx.o" "../src/bsp/startup/startup_stm32f407vgtx.s"
+arm-none-eabi-gcc "../src/bsp/bsp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/bsp.d" -MT"src/bsp/bsp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/bsp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/stm32f4xx_hal_msp.d" -MT"src/bsp/stm32f4xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../src/bsp/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/stm32f4xx_it.d" -MT"src/bsp/stm32f4xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/stm32f4xx_it.o"
+arm-none-eabi-gcc "../src/bsp/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/syscalls.d" -MT"src/bsp/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/syscalls.o"
+arm-none-eabi-gcc "../src/bsp/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/sysmem.d" -MT"src/bsp/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/sysmem.o"
+arm-none-eabi-gcc "../src/bsp/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/bsp/system_stm32f4xx.d" -MT"src/bsp/system_stm32f4xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/bsp/system_stm32f4xx.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+arm-none-eabi-gcc "../src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/main.d" -MT"src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/main.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44636	    416	  11464	  56516	   dcc4	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.list
+Finished building: 09_uart2_3.bin
+Finished building: 09_uart2_3.hex
+ 
+ 
+ 
+11:58:30 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/hw.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/hw.d" -MT"src/hw/hw.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/hw.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44724	    416	  11464	  56604	   dd1c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+ 
+Finished building: 09_uart2_3.bin
+ 
+Finished building: 09_uart2_3.list
+ 
+11:58:38 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44724	    416	  11464	  56604	   dd1c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+11:59:26 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+../src/ap/ap.c:51:11: warning: unused variable 'rx_data1' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |           ^~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44660	    416	  11464	  56540	   dcdc	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+11:59:33 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44660	    416	  11464	  56540	   dcdc	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+11:59:48 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44660	    416	  11464	  56540	   dcdc	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+11:59:51 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44660	    416	  11464	  56540	   dcdc	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+12:01:25 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44732	    416	  11464	  56612	   dd24	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+12:01:33 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44732	    416	  11464	  56612	   dd24	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+12:08:01 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+12:08:08 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+12:08:14 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+12:17:17 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+12:18:09 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+12:18:46 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+14:34:52 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+14:35:02 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+14:36:00 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+14:56:02 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+14:56:11 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:28:28 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:42:52 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44748	    416	  11464	  56628	   dd34	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+15:42:59 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44748	    416	  11464	  56628	   dd34	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:44:44 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44756	    416	  11464	  56636	   dd3c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+15:45:03 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44756	    416	  11464	  56636	   dd3c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:45:14 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44756	    416	  11464	  56636	   dd3c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:46:56 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+../src/ap/ap.c:83:7: warning: 'rx_data1' is used uninitialized [-Wuninitialized]
+   83 |       uartPrintf(_DEF_UART1, "rx_data1 : 0x%X [%c] \r\n", rx_data1, rx_data1);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44744	    416	  11464	  56624	   dd30	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+15:47:02 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44744	    416	  11464	  56624	   dd30	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:51:11 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+../src/ap/ap.c:83:7: warning: 'rx_data1' is used uninitialized [-Wuninitialized]
+   83 |       uartPrintf(_DEF_UART1, "rx_data1 : 0x%X [%c] \r\n", rx_data1, rx_data1);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+15:51:18 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44752	    416	  11464	  56632	   dd38	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+15:54:33 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44760	    416	  11464	  56640	   dd40	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+15:54:40 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44760	    416	  11464	  56640	   dd40	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+16:05:13 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc "../src/ap/ap.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/ap/ap.d" -MT"src/ap/ap.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/ap/ap.o"
+../src/common/core/qbuffer.c: In function 'qbufferAvailable':
+../src/common/core/qbuffer.c:183:3: warning: implicit declaration of function 'uartPrintf' [-Wimplicit-function-declaration]
+  183 |   uartPrintf(_DEF_UART4, "===============================\r\n");
+      |   ^~~~~~~~~~
+../src/ap/ap.c: In function 'apMain':
+../src/ap/ap.c:51:31: warning: unused variable 'rx_data3' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                               ^~~~~~~~
+../src/ap/ap.c:51:21: warning: unused variable 'rx_data2' [-Wunused-variable]
+   51 |   uint8_t rx_data1, rx_data2, rx_data3;
+      |                     ^~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44892	    416	  11464	  56772	   ddc4	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.bin
+Finished building: 09_uart2_3.hex
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+16:05:19 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44892	    416	  11464	  56772	   ddc4	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+16:10:46 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44772	    416	  11464	  56652	   dd4c	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+16:28:40 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44780	    416	  11464	  56660	   dd54	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+16:28:54 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44780	    416	  11464	  56660	   dd54	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+16:31:58 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44780	    416	  11464	  56660	   dd54	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+16:33:20 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44780	    416	  11464	  56660	   dd54	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+16:43:23 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+16:43:40 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+17:19:39 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+17:19:46 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+17:22:35 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44768	    416	  11464	  56648	   dd48	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.bin
+Finished building: 09_uart2_3.hex
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+17:23:37 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+17:23:43 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+18:41:32 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+18:52:39 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+18:52:46 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+18:56:13 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+../src/common/core/qbuffer.c: In function 'qbufferCreate':
+../src/common/core/qbuffer.c:23:21: error: assignment to expression with array type
+   23 |   p_node->p_buf     = p_buf;
+      |                     ^
+make: *** [src/common/core/subdir.mk:19: src/common/core/qbuffer.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+18:58:48 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc "../src/common/core/qbuffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/common/core/qbuffer.d" -MT"src/common/core/qbuffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/common/core/qbuffer.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44764	    416	  11464	  56644	   dd44	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+19:06:57 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartStartRx':
+../src/hw/core/uart.c:243:66: warning: passing argument 2 of 'HAL_UART_Receive_DMA' makes pointer from integer without a cast [-Wint-conversion]
+  243 |         if(HAL_UART_Receive_DMA(&p_uart->handle, uart_rx_qbuf[ch][UART_RX_QBUF_LENGTH], p_uart->qbuffer_rx.length) != HAL_OK)
+      |                                                  ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+      |                                                                  |
+      |                                                                  uint8_t {aka unsigned char}
+In file included from D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/stm32f4xx_hal_conf.h:411,
+                 from D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/bsp.h:12,
+                 from D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw/hw_def.h:13,
+                 from D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include/uart.h:11,
+                 from ../src/hw/core/uart.c:9:
+D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:727:76: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'uint8_t' {aka 'unsigned char'}
+  727 | HAL_StatusTypeDef HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44776	    416	  12424	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+19:07:05 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44776	    416	  12424	  57616	   e110	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+19:09:07 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44760	    416	  12424	  57600	   e100	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+19:09:18 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44760	    416	  12424	  57600	   e100	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+19:12:30 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+../src/hw/core/uart.c: In function 'uartAvailable':
+../src/hw/core/uart.c:306:9: warning: 'ret' may be used uninitialized [-Wmaybe-uninitialized]
+  306 |         uartPrintf(_DEF_UART4, "IN : %d OUT : %d  LEN : %d NDTR : %d RET :  %d\r\n",
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  307 |                    p_uart->qbuffer_rx.ptr_in, p_uart->qbuffer_rx.ptr_out, p_uart->qbuffer_rx.length, p_uart->hdma_rx.Instance->NDTR, ret);
+      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44748	    416	  12424	  57588	   e0f4	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
+19:12:38 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-size   09_uart2_3.elf 
+   text	   data	    bss	    dec	    hex	filename
+  44748	    416	  12424	  57588	   e0f4	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+19:16:11 **** Incremental Build of configuration Debug for project 09_uart2_3 ****
+make -j16 all 
+arm-none-eabi-gcc "../src/hw/core/uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DSTM32F407xx -c -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/CMSIS/Include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Drivers/STM32F4xx_HAL_Driver/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/ap" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/hw" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/ldscript" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/bsp/startup" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/include" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/common/core" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/Middlewares/ST/STM32_USB_Device_Library/Core/Inc" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/App" -I"D:/work/1000_Git/stm32f407vgt6/09_uart2_3/src/lib/stm32f407vgt6_cube/USB_DEVICE/Target" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"src/hw/core/uart.d" -MT"src/hw/core/uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "src/hw/core/uart.o"
+arm-none-eabi-gcc -o "09_uart2_3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\work\1000_Git\stm32f407vgt6\09_uart2_3\src\bsp\ldscript\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="09_uart2_3.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 09_uart2_3.elf
+ 
+arm-none-eabi-size   09_uart2_3.elf 
+arm-none-eabi-objdump -h -S  09_uart2_3.elf  > "09_uart2_3.list"
+arm-none-eabi-objcopy  -O ihex  09_uart2_3.elf  "09_uart2_3.hex"
+arm-none-eabi-objcopy  -O binary  09_uart2_3.elf  "09_uart2_3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  44760	    416	  12424	  57600	   e100	09_uart2_3.elf
+Finished building: default.size.stdout
+ 
+Finished building: 09_uart2_3.hex
+Finished building: 09_uart2_3.bin
+ 
+ 
+Finished building: 09_uart2_3.list
+ 
